@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OFFGRID — Wear Your Own Rules</title>
+
+    <!-- Connect the CSS stylesheet -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Import modern fonts from Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Announcement bar -->
+
+    <div class="announcement">
+
+        INDEPENDENT STYLE. NO RULES. NO LIMITS.
+
+    </div>
+
+    <!-- Main navigation -->
+
+    <header class="navbar">
+
+        <a href="#" class="logo">OFFGRID<span>®</span></a>
+
+        <nav class="nav-links" id="navLinks">
+
+            <a href="#home">Home</a>
+
+            <a href="#shop">Shop</a>
+
+            <a href="#about">Our Story</a>
+
+        </nav>
+
+        <button class="cart-button" id="cartButton">
+
+            BAG <span id="cartCount">0</span>
+
+        </button>
+
+        <button class="menu-button" id="menuButton"
+
+                aria-label="Toggle navigation">☰</button>
+
+    </header>
+
+    <main>
+
+        <!-- Hero section -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">NOT MADE TO FIT IN.</p>
+
+                <h1>BREAK<br>THE <span>GRID.</span></h1>
+
+                <p class="hero-description">
+
+                    Streetwear for every identity.
+
+                    Built for your own rules.
+
+                </p>
+
+                <a href="#shop" class="primary-button">
+
+                    EXPLORE THE DROP ↗
+
+                </a>
+
+            </div>
+
+            <div class="hero-image">
+
+                <img
+
+                    src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=1200&q=85"
+
+                    alt="Contemporary streetwear fashion campaign">
+
+                <span class="image-label">DROP 001 / 2026</span>
+
+            </div>
+
+            <div class="hero-number">001</div>
+
+        </section>
+
+        <!-- Scrolling-style brand statement -->
+
+        <div class="ticker">
+
+            <span>OWN YOUR STYLE ✳ BREAK THE RULES ✳
+
+                MOVE DIFFERENT ✳ OWN YOUR STYLE ✳</span>
+
+        </div>
+
+        <!-- Shop section -->
+
+        <section class="shop section-padding" id="shop">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="eyebrow">THE FIRST DROP</p>
+
+                    <h2>FRESH <span>OFFGRID.</span></h2>
+
+                </div>
+
+                <p class="section-description">
+
+                    Everyday essentials. Uncommon energy.
+
+                </p>
+
+            </div>
+
+            <div class="filter-buttons">
+
+                <button class="filter-btn active" data-filter="all">ALL</button>
+
+                <button class="filter-btn" data-filter="tops">TOPS</button>
+
+                <button class="filter-btn" data-filter="bottoms">BOTTOMS</button>
+
+                <button class="filter-btn" data-filter="accessories">ACCESSORIES</button>
+
+            </div>
+
+            <!-- JavaScript inserts product cards here -->
+
+            <div class="product-grid" id="productGrid"></div>
+
+        </section>
+
+        <!-- Brand story -->
+
+        <section class="about section-padding" id="about">
+
+            <div class="about-image">
+
+                <img
+
+                    src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1100&q=85"
+
+                    alt="Streetwear-inspired fashion editorial">
+
+            </div>
+
+            <div class="about-content">
+
+                <p class="eyebrow">MORE THAN WHAT YOU WEAR</p>
+
+                <h2>YOU DON'T<br>NEED TO <span>FIT IN.</span></h2>
+
+                <p>
+
+                    OFFGRID is built around individuality.
+
+                    We believe style has no labels, no limits,
+
+                    and no single way to be yourself.
+
+                </p>
+
+                <a href="#shop" class="text-link">FIND YOUR UNIFORM ↗</a>
+
+            </div>
+
+        </section>
+
+        <!-- Newsletter -->
+
+        <section class="newsletter">
+
+            <p class="eyebrow">GET ON THE LIST</p>
+
+            <h2>FIRST IN.<br>NEVER ORDINARY.</h2>
+
+            <form id="newsletterForm">
+
+                <input
+
+                    type="email"
+
+                    id="emailInput"
+
+                    placeholder="Your email address"
+
+                    aria-label="Your email address"
+
+                    required>
+
+                <button type="submit">JOIN ↗</button>
+
+            </form>
+
+            <p class="form-message" id="formMessage"></p>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <a href="#home" class="logo">OFFGRID<span>®</span></a>
+
+        <p>WEAR YOUR OWN RULES.</p>
+
+        <p class="copyright">
+
+            © 2026 OFFGRID. PORTFOLIO DEMO.
+
+        </p>
+
+    </footer>
+
+    <!-- Shopping cart panel -->
+
+    <div class="cart-overlay" id="cartOverlay">
+
+        <div class="cart-panel">
+
+            <div class="cart-heading">
+
+                <h2>YOUR BAG</h2>
+
+                <button id="closeCart" aria-label="Close cart">✕</button>
+
+            </div>
+
+            <div id="cartItems" class="cart-items">
+
+                <p>Your bag is empty. Find your next favourite.</p>
+
+            </div>
+
+            <div class="cart-bottom">
+
+                <p>TOTAL <strong id="cartTotal">₹0</strong></p>
+
+                <button id="checkoutButton" class="primary-button">
+
+                    CHECKOUT DEMO ↗
+
+                </button>
+
+                <small>Demo only — no real payment is collected.</small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Connect the JavaScript file -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
